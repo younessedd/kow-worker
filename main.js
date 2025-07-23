@@ -11,4 +11,23 @@
       nav.classList.remove("active");
     });
   });
+
+
+
+
+// scroll contact us 
+    function scrollToSection() {
+    document.getElementById("contactUs").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+
+
+
+// scroll to home
+    function scrollToHome() {
+    document.getElementById("home").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
  

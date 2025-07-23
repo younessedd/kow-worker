@@ -6,54 +6,64 @@
     <title>Ko-Worker</title>
     <!-- style.css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 
 
 
 <body>
 
-<!-- header -->
+<!--Start------ header -->
+
  <header>
+
     <div class="container">
-    <div class="logo">
-        <img src="images/logo ko work space.png" alt="">
-    </div>
+       <div class="logo">
+          <img src="images/logo ko work space.png" alt="Logo" onclick="scrollToHome()" >
+
+       </div>
       <!-- زر الهامبرغر -->
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    
-    <nav>
-        <a href="#">Services</a>
-        <a href="#">Valeurs</a>
-        <a href="#">Offres</a>
-        <a href="#">About-us</a>
-        <a href="#">Social-media</a>
-        <button class="btnContactUs">Contact-Us</button>
-    </nav>
+           <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+          <nav>
+
+        <a href="#Services">Services</a>        
+        <a href="#Offres">Offres</a>
+        <a href="#About-us">About-us</a>
+        <a href="#Valeurs">Valeurs</a>
+        <a href="#Social-media">Social-media</a>
+        
+          <button class="btnContactUs" onclick="scrollToSection()">Contact-Us</button> 
+
+        </nav>
     
 
-</div>
+   </div>
+
  </header>
+ 
+<!--End------ header -->
 
- <!-- main -->
+ <!--Start----- main -->
+
+<main>
+
+<!--Start----- home-section -->
 
 
 
-    <!-- home-section -->
-
-<section class="home">
+<section class="home" id="home">
   <div class="home-content">
     <div class="text">
       <h1>Welcome</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eos, modi ut. Quibusdam consectetur totam porro incidunt error id at? Deleniti,
-        laudantium odio? Iure, voluptatum beatae. Reprehenderit neque nihil sed dolores.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eos, modi ut. Quibusdam consectetur totam porro incidunt error id at? Deleniti,
-        laudantium odio? Iure, voluptatum beatae. Reprehenderit neque nihil sed dolores.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eos, modi ut. Quibusdam consectetur totam porro incidunt error id at? Deleniti,
-        laudantium odio? Iure, voluptatum beatae. Reprehenderit neque nihil sed dolores.
+        Eos, modi ut. Quibusdam consectetur totam porro incidunt 
+        error id at? Deleniti,
+       
+      
+        
       </p>
     </div>
 
@@ -69,14 +79,348 @@
   </div>
 </section>
 
-
-<!-- About us -->
-
-<section class="about-us">
+<!--End----- home-section -->
 
 
+<!--Start---- About-us -->
 
+<section class="About-us" id="About-us" >
+  <h2 class="section-title" >About-Us</h2>
+
+  <div class="section-content">
+    <div class="image-side">
+      <img src="images/5.jpg" alt="Big Picture">
+    </div>
+
+    <div class="text-side">
+      <h3 class="paragraph-title">Title of Paragraph</h3>
+      <p>
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Nulla facilisi. Duis euismod,
+         justo at pulvinar posuere, 
+        sem lorem ultricies purus, 
+        vel feugiat orci libero at velit.
+          Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Nulla facilisi. Duis euismod,
+         justo at pulvinar posuere, 
+        sem lorem ultricies purus, 
+        vel feugiat orci libero at velit.
+          Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Nulla facilisi. Duis euismod,
+         justo at pulvinar posuere, 
+        sem lorem ultricies purus, 
+        vel feugiat orci libero at velit.
+          Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Nulla facilisi. Duis euismod,
+         justo at pulvinar posuere, 
+        sem lorem ultricies purus, 
+        vel feugiat orci libero at velit.
+          Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Nulla facilisi. Duis euismod,
+         justo at pulvinar posuere, 
+        sem lorem ultricies purus, 
+        vel feugiat orci libero at velit.
+      </p>
+    </div>
+  </div>
+
+  <div class="read-button">
+    <button>Read Me</button>
+  </div>
 </section>
+<!--End---- About-us -->
+
+
+<!--Start---- Services -->
+
+<section class="services-section" id="Services">
+  <h2 class="section-title">Services</h2>
+
+  <div class="service-images">
+    <img src="images/6.jpg" alt="Service Image 1" />
+    <img src="images/7.jpg" alt="Service Image 2" />
+  </div>
+
+  <div class="service-columns">
+    <div class="service-box">
+      <i class="fa-solid fa-gear icon"></i>
+      <h3>Maintenance</h3>
+      <p>Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+      
+   
+    </p>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-bolt icon"></i>
+      <h3>Installation</h3>
+      <p>Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+    </p>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-house-chimney icon"></i>
+      <h3>Smart Home</h3>
+      <p>Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+    </p>
+    </div>
+  </div>
+</section>
+
+
+<!--End---- Services -->
+
+
+
+
+
+<!--Start---- OFFERS -->
+
+
+<section class="offers" id="Offres">
+  <h2 class="section-title">Our Offers</h2>
+
+  <!-- الصف الأول مع عنوان لكل عرض -->
+  <div class="offers-row">
+
+    <div class="offer-box">
+      
+      <h3 class="offer-title">Accès Journée</h3>
+      <ul class="custom-list"><li><h4>Tarif : <span class="highlight">100 MAD</span> / jour</h4></li>
+      <li><h4>Accès de 09h à 18h</h4></li>
+      <li><h4>Wi-Fi haut débit</h4></li>
+      <li><h4>Espace partagé</h4></li>
+      <li><h4>Café et thé offerts</h4></li>
+     
+      
+      
+      
+        
+      
+      </ul>
+    </div>
+
+
+
+
+    <div class="offer-box">
+      <h3 class="offer-title"> Bureau Hebdomadaire</h3>
+      <ul class="custom-list"><li><h4>Tarif :<span class="highlight"> 500 MAD</span>/ semaine</h4></li>
+      <li><h4>Accès 5 jours / semaine</h4></li>
+      <li><h4>Bureau nomade</h4></li>
+      <li><h4>Imprimante / Scanner</h4></li>
+      <li><h4>Accès aux événements</h4></li>
+      <li><h4>réseau</h4></li>
+      
+      
+      
+        
+      
+     
+      </ul>
+    </div>
+
+
+    <div class="offer-box">
+      <h3 class="offer-title">Domiciliation Bureau 
+Privé</h3>
+<ul class="custom-list">
+  <li><h4>À partir de : <span class="highlight">3000 MAD</span> / mois</h4></li>
+  <li><h4>Bureau fermé (2 à 6 personnes)</h4></li>
+  <li><h4>Accès 24h/24 – 7j/7</h4></li>
+  <li><h4>Adresse pro & courrier</h4></li>
+  <li><h4>Entretien et sécurité inclus B</h4></li>
+  
+      
+     
+      
+        
+      
+      </ul>
+      
+    </div>
+  </div>
+
+  <!-- الصف الثاني مع عناوين أيضًا -->
+  <div class="offers-row">
+
+    <div class="offer-box">
+      <h3 class="offer-title">Coworking Mensuel</h3>
+      <ul class="custom-list">
+        <li><h4>Tarif : <span class="highlight">1500 MAD</span> MAD / mois</h4></li>
+        <li><h4>Accès illimité 7j/7</h4></li>
+        <li><h4>Bureau fixe ou flexible</h4></li>
+        <li><h4>4h de salle de réunion</h4></li>
+        <li><h4>Casier personnel sécurisé</h4></li>
+        <li></li>
+      
+      
+      
+        
+      
+      </ul>
+    </div>
+
+
+
+    <div class="offer-box">
+      <h3 class="offer-title">Pass Horaire</h3>
+      <ul class="custom-list">
+        <li><h4>Tarif : <span class="highlight">30 MAD</span> / heure</h4></li>
+        <li><h4>Idéal pour les besoins ponctuels</h4></li>
+        <li><h4>Accès à tous les espaces communs</h4></li>
+        <li><h4>Connexion Wi-Fi rapide</h4></li>
+        <li><h4>Boissons chaudes incluses</h4></li>
+        
+      
+      
+   
+        
+      
+      </ul>
+      
+    </div>
+    <div class="offer-box">
+      <h3 class="offer-title"> Envie d’une offre  personnalisée</h3>
+      <ul class="custom-list">
+        <li><h4>Contactez-nous pour une formule sur mesure adaptée à vos besoins professionnels</h4></li>
+      
+     <!--  <h4>Feature B</h4>
+      <h4>Feature C</h4>
+        <h4>Feature A</h4>
+      <h4>Feature B</h4>
+      <h4>Feature C</h4> -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--End---- Value -->
+
+
+<!--START---- CONTACT-US -->
+<section class="contact-us" id="contactUs">
+  <div class="container-contactus">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Commentaire:</label>
+      <textarea id="message" rows="6" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+  </div>
+</section>
+
+
+
+<!--End---- CONTACT-US -->
+
+<!--Start---- Value -->
+
+
+<section class="core-values" id="Valeurs">
+  <h2 class="title">Value</h2>
+  <div class="values-wrapper">
+    <div class="value-box top">Have Fun<br><small>At the heart of everything we do is the belief that work should be enjoyable. We encourage a positive, playful environment where creativity and laughter thrive. When we have fun, we build stronger connections, reduce stress, and unlock our full potential. It's not just about the results—it’s about enjoying the journey together.</small></div>
+    
+    <div class="value-box left-top">Be Passionate<br><small>Passion fuels excellence. We believe in approaching every task with energy, dedication, and a genuine love for what we do. When you're passionate, it shows—in the quality of your work, in your motivation, and in the way you inspire those around you. It’s this inner drive that pushes us to go the extra mile and make a real impact.</small></div>
+    <div class="value-box left-bottom">Take Initiative<br><small>We don’t wait for opportunities—we create them. Taking initiative means stepping up, solving problems, and making things happen without being asked. It’s about being proactive, thinking ahead, and embracing responsibility with confidence. By taking initiative, we lead by example and drive progress every step of the way.</small></div>
+    
+    <div class="core-circle">CORE<br>VALUES</div>
+    
+    <div class="value-box right-top">Value Team-work<br><small>Great things are never achieved alone. We believe in the power of collaboration, where every voice matters and diverse perspectives come together to create better outcomes. Teamwork means supporting each other, sharing knowledge, and celebrating collective success. When we work as one, we grow stronger, smarter, and more united.</small></div>
+    <div class="value-box right-bottom">Ensure Growth<br><small>This is simple text insert your desired text here</small></div>
+  </div>
+</section>
+
+
+<!--END---- Value -->
+
+<!--START---- FOOTER -->
+
+<footer class="footer" id="Social-media">
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+  </div>
+
+  <p>2025 CowWorker. All rights reserved. | Designed with ❤️ by jhones</p>
+</footer>
+<!--End---- FOOTER -->
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
 
    
 
