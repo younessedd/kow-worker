@@ -29,5 +29,17 @@
     document.getElementById("home").scrollIntoView({
       behavior: "smooth"
     });
+}
+  
+// scroll 
+  function scrollOffers(direction) {
+    const container = document.querySelector('.offers-row');
+    const scrollAmount = 300;
+
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
   }
  

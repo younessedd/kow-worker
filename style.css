@@ -4,98 +4,100 @@
   padding: 0;
   font-family: Arial, sans-serif;
 }
-  html {
-      scroll-behavior: smooth; /* هذا هو السحر */
-      scroll-padding-top: 80px;
-    }
 
- /* start body */
+html {
+  scroll-behavior: smooth; /* هذا هو السحر */
+  scroll-padding-top: 80px;
+}
+
+/* start body */
 body {
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
   body {
     margin-top: 10px;
   }
-  }
+}
 /* end body */
+
 
 /* start header */
   
-  header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background: #D9D9D9;
-    z-index: 100;
+ header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #D9D9D9;
+  z-index: 100;
+}
 
-  }
-
-  .container {
+.container {
   display: flex;
   justify-content: space-between; /* مسافة بين الشعار والقائمة */
   align-items: center;            /* محاذاة رأسية */
   height: 100%;
   padding: 0 10px;
-  }
-
-  .logo{
-    display: flex;
-
- 
-  }
-  .logo img{
-    width: 200px;
-    height: 80%;
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  nav{
-    display: flex;
-    align-items: right;
-    position: relative;
-    gap: 20px;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 15px;
-    /* background: #209094; */
-    border-radius: 10px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    font-weight: 600;
-     transition: all 0.3s ease;
-
-  }
-  nav a:hover{
-    background:black;
-    color: white;
-  }
-  
-  button {
-  
-    color: black;
-    padding: 8px 15px;
-    background: none;
-      border-radius: 10px;
-      border: 2px solid transparent;
-      cursor: pointer;
-      font-weight: 600;
-      transition: all 0.3s ease;
-  
-  
 }
 
-button:hover {
-  background-color: black;
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 200px;
+  height: 80%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: right;
+  position: relative;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 15px;
+  /* background: #209094; */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #209094;
   color: white;
 }
 
+button {
+  color: black;
+  padding: 8px 15px;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #183335;
+  color: white;
+}
+
+.btnContactUs:hover {
+  background-color: #183335;
+  color: white;
+}
 
 .menu-toggle {
   display: none;
@@ -105,8 +107,6 @@ button:hover {
   border: none;
   cursor: pointer;
 }
-
-
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -136,6 +136,7 @@ button:hover {
   }
 }
 
+
 /* end header */
 
 
@@ -146,10 +147,10 @@ button:hover {
 
 .home {
   display: flex;
-  flex-direction: column; /* ← مهم لجعل الصور الصغيرة تحت */
+  flex-direction: column; /* مهم لجعل الصور الصغيرة تحت */
   align-items: center;
   justify-content: center;
-  height: 200hv;
+  height: 200hv; /* قد يكون المقصود 200vh (ارتفاع الشاشة) */
   width: 100%;
   background-color: #209094;
   padding: 30px;
@@ -187,7 +188,7 @@ button:hover {
 }
 
 .image img {
-    border-top: 10px;
+  border-top: 10px; /* هذه الخاصية غير مكتملة أو غير صحيحة */
   width: 550px;
   height: auto;
   border-radius: 10px;
@@ -205,7 +206,6 @@ button:hover {
   object-fit: cover;
   border-radius: 8px;
 }
-
 
 /* mobile */
 /* الهاتف فقط */
@@ -253,12 +253,13 @@ button:hover {
     max-width: 90%;
     margin-bottom: 20px;
   }
+
   .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
   .image img {
     width: 90%;
@@ -266,27 +267,27 @@ button:hover {
     border-radius: 10px;
   }
 
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* هذا يجعل الصور تتوسّط أفقياً */
-  justify-content: center; /* هذا يجعلها تتوسّط عموديًا إذا لزم */
-  gap: 20px;
-  margin-top: 20px;
-  width: 100%;             /* تأكد أن الحاوية تمتد لكل العرض */
-}
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* يجعل الصور تتوسط أفقياً */
+    justify-content: center; /* يجعل الصور تتوسط عموديًا إذا لزم */
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;             /* تأكد أن الحاوية تمتد لكل العرض */
+  }
 
-.gallery img {
-  width: 90%;              /* نجعل كل صورة بعرض 90% لكي تبقى داخل المركز */
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
+  .gallery img {
+    width: 90%;              /* عرض 90% لكل صورة */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
 
 /* end home */
 
-/* start About us  */
+/* start About us */
 
 .About-us {
   width: 100%;
@@ -294,25 +295,22 @@ button:hover {
   background-color: white;
 }
 
-.About-us h2{
-    color:#209094;
+.About-us h2 {
+  color: #209094;
 }
 
 .section-title {
   text-align: center;
   font-size: 32px;
   margin-bottom: 30px;
- 
 }
-
-
 
 .section-content {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* يسمح للعنصر بالانكسار والانتقال للسطر التالي عند ضيق الشاشة */
 }
 
 .image-side img {
@@ -350,11 +348,12 @@ button:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* إضافة تأثير انتقالي */
 }
 
 .read-button button:hover {
   background-color: black;
-  color:white ;
+  color: white;
 }
 
 /* Responsive for mobile */
@@ -376,32 +375,31 @@ button:hover {
 
 /* end about-us */
 
-/* start Services  */
-
-
+/* start Services */
 
 .services-section {
   padding: 50px 20px;
   background-color: #209094;
   text-align: center;
 }
-.services-section h2{
-color: #183335;
+
+.services-section h2 {
+  color: #183335;
 }
 
-.section-title  {
+.section-title {
   font-size: 32px;
   color: black;
   margin-bottom: 40px;
 }
 
-/* Images side-by-side */
+/* عرض الصور بجانب بعضها */
 .service-images {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-bottom: 40px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* يسمح للصور بالانكسار على أجهزة صغيرة */
 }
 
 .service-images img {
@@ -410,12 +408,12 @@ color: #183335;
   border-radius: 10px;
 }
 
-/* Service columns */
+/* أعمدة الخدمات */
 .service-columns {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* يتيح توزيع الأعمدة بشكل جيد على الشاشات الصغيرة */
 }
 
 .service-box {
@@ -424,14 +422,14 @@ color: #183335;
   width: 250px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .service-box:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* رفع العنصر عند المرور بالفأرة */
 }
 
-/* Font Awesome icon styling */
+/* تنسيق الأيقونات (افترضت أن هناك فئة .icon حسب الكود السابق) */
 .service-box .icon {
   font-size: 40px;
   color: #209094;
@@ -449,7 +447,7 @@ color: #183335;
   color: #555;
 }
 
-/* Responsive */
+/* استجابة للأجهزة الصغيرة */
 @media (max-width: 768px) {
   .service-images img {
     width: 90%;
@@ -460,6 +458,7 @@ color: #183335;
     align-items: center;
   }
 }
+
 
 /* end service */
 
@@ -642,10 +641,9 @@ color: #183335;
   .value-box.right-bottom:hover {
     transform: translateX(70%) translateY(-10px);
   }
-    .core-circle:hover {
+  .core-circle:hover {
     transform: translate(-50%, calc(-30% - 10px));
   }
- 
 }
 
 /* end value */
@@ -653,106 +651,144 @@ color: #183335;
 
 /* start offert */
 
+/* قسم العروض */
 .offers {
-  width: auto;
-  height: 150 hv;
-  /* max-width: auto; */
-  /* margin: 50px auto; */
-  padding: 30px;
+  width: 100%;
+  padding: 10px;
   background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  /* border-radius: 15px; */
-  text-align: justify;
+  overflow: hidden;
 }
 
+/* عنوان القسم */
 .section-title {
   font-size: 2rem;
   color: #209094;
   margin-bottom: 40px;
+  text-align: center;
 }
 
+/* الحاوية القابلة للتمرير */
+.scroll-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* صف الصناديق */
 .offers-row {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  box-sizing: border-box;
+
+  /* لإخفاء شريط التمرير */
+  -ms-overflow-style: none; /* IE و Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+.offers-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
+/* كل صندوق عرض */
 .offer-box {
-  flex: 1 1 30%;
+  flex: 0 0 calc(33.333% - 20px); /* 3 صناديق في كل صف */
+  scroll-snap-align: center;
   background: #e5eaea;
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
-  min-width: 250px;
+  box-sizing: border-box;
+  height: 250px;
+  width: 90px; /* يمكن تعديل العرض حسب التصميم */
   transition: transform 0.3s;
 }
-
-  
-
-
 .offer-box:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* تحريك الصندوق للأعلى عند المرور */
 }
 
-
-
-
+/* العناوين داخل الصندوق */
 .offer-title {
   font-size: 1.3rem;
   color: #209094;
   margin-bottom: 10px;
+  text-align: center;
 }
+
+/* تمييز النص */
 .highlight {
-  color: red; /* any color you want */
-  font-weight: bold; /* optional */
+  color: red;
+  font-weight: bold;
 }
 
-
+/* قائمة مخصصة بدون نقاط */
 .custom-list {
-  list-style: none; /* remove default bullet */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .custom-list li h4 {
   position: relative;
-  padding-left: 20px; /* space for the bullet */
+  padding-left: 20px;
 }
-
 .custom-list li h4::before {
-  content: "•"; /* the bullet */
-  position: relative;
+  content: "•"; /* نقطة مخصصة */
+  position: absolute;
   left: 0;
-  color: black; /* choose your color */
+  color: black;
   font-size: 1.2em;
-  text-align: justify;
 }
 
+/* أزرار التمرير الجانبية */
+.scroll-btn {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  background-color: #209094;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+.scroll-btn.left {
+  left: 10px;
+}
+.scroll-btn.right {
+  right: 10px;
+}
 
-/* .offer-box h4 {
-  font-size: 1rem;
-  color: black;
-  margin: 5px 0;
-} */
+/* تصميم الهاتف المحمول: عرض صندوق واحد فقط */
+@media (max-width: 768px) {
+  .offer-box {
+    flex: 0 0 90vw;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .scroll-btn {
+    display: none; /* إخفاء أزرار التمرير في الموبايل */
+  }
+}
 
 /* end offert */
 
 
 
+
 /* start contact us */
 
-
-
-
-/* يجعل القسم يغطي العرض بالكامل */
+/* يجعل قسم الاتصال يغطي العرض بالكامل */
 .contact-us {
   width: 100%;
   background: #209094;
   padding: 50px 0;
 }
 
-/* مركز النموذج داخل الكونتينر */
+/* حاوية النموذج، مركزه ومحدود العرض */
 .container-contactus {
   width: 90%;
   max-width: 700px;
@@ -763,36 +799,38 @@ color: #183335;
   border-radius: 12px;
 }
 
-/* عنوان */
+/* عنوان النموذج */
 .container-contactus h2 {
   text-align: center;
   margin-bottom: 30px;
   color: #333;
 }
 
-/* تنسيق الحقول */
+/* تنسيق كل حقل من حقول النموذج */
 form .form-group {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
+/* تسمية الحقول */
 form label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #555;
 }
 
+/* حقول الإدخال وحقل النص */
 form input,
 form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
-  resize: vertical;
+  resize: vertical; /* يسمح بتغيير ارتفاع textarea فقط */
 }
 
-/* الزر */
+/* زر الإرسال */
 form button {
   width: 100%;
   padding: 12px;
@@ -805,28 +843,33 @@ form button {
   transition: background 0.3s;
 }
 
+/* تأثير تمرير الماوس على الزر */
 form button:hover {
   background: #183335;
 }
 
-/* استجابة للجوال */
+/* استجابة الجوال: تقليل الحشوة داخل الحاوية */
 @media (max-width: 600px) {
   .container-contactus {
     padding: 20px;
   }
 }
 
-/* end sontact-us */
+/* end contact-us */
+
 
 
 /* start FOOTER */
+
+/* تصميم خلفية الفوتر والنص */
 .footer {
-  background: #222;
+  background: #183335;
   color: #fff;
   text-align: center;
   padding: 30px 20px;
 }
 
+/* ترتيب أيقونات التواصل الاجتماعي */
 .footer .social-icons {
   margin-bottom: 15px;
   display: flex;
@@ -835,24 +878,27 @@ form button:hover {
   gap: 15px;
 }
 
+/* تنسيق الروابط داخل أيقونات التواصل */
 .footer .social-icons a {
   color: #fff;
   font-size: 20px;
   transition: color 0.3s ease;
 }
 
+/* تأثير التمرير على أيقونات التواصل */
 .footer .social-icons a:hover {
-  color: #007bff;
+  color: #209094;
 }
 
+/* نص الفوتر */
 .footer p {
   font-size: 0.95rem;
   margin: 0;
   padding: 0 10px;
-  word-break: break-word;
+  word-break: break-word; /* لف النص إذا كان طويلاً */
 }
 
-/* ✅ Media query للشاشات الصغيرة */
+/* ✅ استجابة الفوتر للشاشات الصغيرة */
 @media (max-width: 480px) {
   .footer {
     padding: 20px 10px;
