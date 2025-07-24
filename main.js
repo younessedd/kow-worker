@@ -41,5 +41,29 @@
     } else {
       container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
-  }
+}
+  
+
+
+//emaill protocol send data
+
+
+  // Initialize EmailJS
+  (function() {
+    emailjs.init("IbbG69TuO-Uyx_4I8"); // استبدل بـ مفتاحك العام من EmailJS
+  })();
+
+  // إرسال النموذج
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_9a47m0s", "template_vlo4ub3", this)
+      .then(function(response) {
+        document.getElementById("status-message").textContent = "✅ Message sent successfully!";
+      }, function(error) {
+        document.getElementById("status-message").textContent = "❌ Failed to send message.";
+      });
+
+    this.reset();
+  });
  
