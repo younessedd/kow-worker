@@ -62,7 +62,7 @@ Le site est déployé avec GitHub Pages :
 
 ## 👨‍💻 Auteur
 
-- **Youness Essadassi**
-- Contact : [LinkedIn](https://www.linkedin.com) *(ou adresse e-mail si tu veux)*
+- **Youness Eddanguir**
+
 
 
