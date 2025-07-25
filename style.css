@@ -520,6 +520,7 @@ button {
   padding: 30px ;
   position: relative;
   align-items: center;
+  background: #209094;
 }
 .core-values small{
   color: black;
@@ -532,7 +533,7 @@ button {
 }
 
 .core-values .title {
-  color: #00aab4;
+  color: #183335;
   font-size: 2rem;
   margin-bottom: 30px;
 }
@@ -865,16 +866,65 @@ button {
 
 
 
-/* start contact us */
+/* === نافذة الاتصال المنبثقة === */
 
-/* يجعل قسم الاتصال يغطي العرض بالكامل */
+/* الزر الذي يفتح النافذة */
+
+
+
+#contactBtn {
+  padding: 12px 25px;
+  background-color: #00aab4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* النافذة */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* محتوى النافذة */
+.modal-content {
+  background: transparent;
+  padding: 0;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+}
+
+/* زر الإغلاق */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* === start contact us === */
+
 .contact-us {
   width: 100%;
   background: #209094;
   padding: 50px 0;
+  border-radius: 15px;
 }
 
-/* حاوية النموذج، مركزه ومحدود العرض */
 .container-contactus {
   width: 90%;
   max-width: 700px;
@@ -885,38 +935,33 @@ button {
   border-radius: 12px;
 }
 
-/* عنوان النموذج */
 .container-contactus h2 {
   text-align: center;
   margin-bottom: 30px;
   color: #333;
 }
 
-/* تنسيق كل حقل من حقول النموذج */
 form .form-group {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
-/* تسمية الحقول */
 form label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #555;
 }
 
-/* حقول الإدخال وحقل النص */
 form input,
 form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
-  resize: vertical; /* يسمح بتغيير ارتفاع textarea فقط */
+  resize: vertical;
 }
 
-/* زر الإرسال */
 form button {
   width: 100%;
   padding: 12px;
@@ -929,17 +974,16 @@ form button {
   transition: background 0.3s;
 }
 
-/* تأثير تمرير الماوس على الزر */
 form button:hover {
   background: #183335;
 }
 
-/* استجابة الجوال: تقليل الحشوة داخل الحاوية */
 @media (max-width: 600px) {
   .container-contactus {
     padding: 20px;
   }
 }
+
 
 /* end contact-us */
 

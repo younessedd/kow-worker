@@ -57,7 +57,7 @@
   document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    emailjs.sendForm("service_9a47m0s", "template_vlo4ub3", this)
+    emailjs.sendForm("service_9a47m0s", "template_vlo4ub3", this)     //  change service ,templet 
       .then(function(response) {
         document.getElementById("status-message").textContent = "✅ Message sent successfully!";
       }, function(error) {
@@ -66,4 +66,25 @@
 
     this.reset();
   });
- 
+
+  // “Contact us” button that opens a modal containing a form
+ const contactBtn = document.getElementById('contactBtn');
+const contactModal = document.getElementById('contactModal');
+const closeBtn = document.querySelector('.close');
+
+// فتح النافذة
+contactBtn.addEventListener('click', () => {
+  contactModal.style.display = 'flex';
+});
+
+// غلق النافذة
+closeBtn.addEventListener('click', () => {
+  contactModal.style.display = 'none';
+});
+
+// غلق إذا تم الضغط خارج النموذج
+window.addEventListener('click', (event) => {
+  if (event.target === contactModal) {
+    contactModal.style.display = 'none';
+  }
+});
